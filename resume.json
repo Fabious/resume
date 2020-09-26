@@ -21,7 +21,7 @@
       "position": "Développeur Front",
       "website": "https://les-tilleuls.coop/",
       "startDate": "2018-07-31",
-      "summary": "Société autogérée et égalitaire (Scop), j'ai des missions variées directement chez le client. Exclusivement en Javascript, je fais majoritairement du Front mais je me vois également confier des missions en Back (NodeJS). Je me suis occupé de petites équipe en tant que coach et référent technique.",
+      "summary": "Société autogérée et égalitaire (Scop), j'ai des missions variées directement chez le client. Exclusivement en Javascript, je fais majoritairement du Front mais je me vois également confier des missions en Back (NodeJS). Je me suis occupé de petites équipes en tant que coach et référent technique.",
       "highlights": [
         "Expertise React, architecture Front",
         "Expertise Typescript",
@@ -66,12 +66,12 @@
     },
     {
       "name": "Mairie de Calais",
-      "position": "Assistant base de donnée",
+      "position": "Assistant base de données",
       "startDate": "2011-05-31",
       "endDate": "2011-11-31",
-      "summary": "CDD pour venir en renfort pour la conception d'une base de donnée répertoriant toutes les addresses de Calais.",
+      "summary": "CDD pour venir en renfort pour la conception d'une base de données répertoriant toutes les adresses de Calais.",
       "highlights": [
-        "Conception de base de donnée avec méthode Merise",
+        "Conception de base de données avec méthode Merise",
         "Interface utilisateur réalisé sous Access en VBA",
         "Apprentissage des Systèmes d'information géographique (SIG)"
       ]
@@ -83,7 +83,7 @@
       "endDate": "2010-03-31",
       "summary": "Contrat en alternance, puis CDI. Travail avec de nombreux clients différents (Auchan, Orchestra, Tape à l'oeil, la Redoute, 3 Suisses, Leroux, etc)",
       "highlights": [
-        "Intégration de dizaines de sites (HTML / CSS / Javscript)",
+        "Intégration de dizaines de sites (HTML / CSS / Javascript)",
         "Développement d'animation Flash avec Actionscript (AS3)",
         "Développement de module jQuery"
       ]
