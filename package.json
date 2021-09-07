@@ -1,0 +1,30 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "https://fabious.github.io/resume/",
+  "main": "index.js",
+  "scripts": {
+    "build:html": "resume export resume.html",
+    "build:pdf": "resume export resume.pdf --theme jsonresume-theme-paper"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabious/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fabious/resume/issues"
+  },
+  "homepage": "https://github.com/Fabious/resume#readme",
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-eloquent": "^4.1.0",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-short": "^0.1.7",
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "resume-cli": "^3.0.5"
+  }
+}
