@@ -4,7 +4,7 @@
   "description": "https://fabious.github.io/resume/",
   "main": "index.js",
   "scripts": {
-    "build:html": "resume export resume.html",
+    "build:html": "resume export index.html",
     "build:pdf": "resume export resume.pdf --theme jsonresume-theme-paper"
   },
   "repository": {
