@@ -7,7 +7,7 @@
     "email": "Fabious[at]free.fr",
     "phone": "06 78 07 15 84",
     "website": "",
-    "summary": "I've always been passionate about computers. I started my career as a Front-end developer (html, css, javascript, actionscript3), then I evolved as a webdesigner (adobe suite). And since many years I'm now exclusively doing code, with a special interest in Javascript ecosystem (Typescript, React, NodeJS, etc)",
+    "summary": "With a deep-rooted passion for computers, I embarked on my career as a Front-end Developer, working with HTML, CSS, JavaScript, and ActionScript 3. I later honed my design skills using the Adobe Suite. In recent years, I have dedicated myself exclusively to coding, acquiring substantial experience in both front-end and back-end technologies. I am particularly enthusiastic about the JavaScript ecosystem, focusing on TypeScript, React, and Node.js, which allows me to create seamless and efficient web applications.",
     "location": {
       "address": "29 rue du duc de guise",
       "postalCode": "62100",
@@ -18,71 +18,83 @@
   },
   "work": [
     {
+      "name": "France Télévisions",
+      "position": "Lead Front-end Developer",
+      "startDate": "2022-09-01",
+      "summary": "Joined France Télévisions to provide strong front-end expertise, manage the front-end team, and drive the adoption of best practices. The technology stack includes React, TypeScript, and Next.js. My leadership has been well-received, and I have played a key role in recruiting and training new front-end developers.",
+      "highlights": [
+        "Led and mentored a front-end team, enhancing performance and code quality",
+        "Expertly utilized React, TypeScript, and Next.js to build scalable applications",
+        "Conducted interviews and successfully recruited skilled front-end developers",
+        "Developed a sophisticated rich text editor using Tiptap"
+      ]
+    },
+    {
       "name": "Les Tilleuls",
-      "position": "Front-end developer",
+      "position": "Front-end Developer",
       "website": "https://les-tilleuls.coop/",
       "startDate": "2018-07-31",
-      "summary": "Self-managed and egalitarian company (Scop), I have various missions directly at the customer. Exclusively in Javascript, I mainly work on the Front but I also have some Back missions (NodeJS). I've been in charge of small teams as a coach and technical referent.",
+      "summary": "At Les Tilleuls, a self-managed and egalitarian company (Scop), I undertake diverse client projects, primarily focusing on front-end development with JavaScript. I also handle back-end tasks using NodeJS. My role includes leading small teams as a coach and technical advisor.",
       "highlights": [
-        "React and Typescript expertise, systems design",
-        "GraphQL (Apollo) and Express (NodeJS)"
+        "Expertise in React and TypeScript, system design and architecture",
+        "Implementation of GraphQL (Apollo) and Express (NodeJS) solutions"
       ]
     },
     {
       "name": "CPAM de Calais",
-      "position": "Fullstack developer",
+      "position": "Fullstack Developer",
       "startDate": "2016-10-31",
       "endDate": "2017-03-31",
-      "summary": "Main mission is to improve the intranet of the social security of Calais.",
+      "summary": "Led efforts to enhance the intranet for the Calais social security office, focusing on performance and user experience.",
       "highlights": [
-        "Refactoring and bug fixes of the existing codebase (PHP)",
-        "Optimization of server performance"
+        "Refactored and fixed bugs in the existing PHP codebase",
+        "Optimized server performance, resulting in faster load times"
       ]
     },
     {
       "name": "Gotek7",
-      "position": "Prestashop developer",
-      "startDate": "2013-11-31",
-      "endDate": "2014-02-31",
-      "summary": "Short mission to enable the company to have its online store.",
+      "position": "Prestashop Developer",
+      "startDate": "2013-11-30",
+      "endDate": "2014-02-28",
+      "summary": "Executed a short-term project to establish the company's online store, from design to integration.",
       "highlights": [
-        "Design in Photoshop, taking pictures for the product sheets",
-        "Integration with Prestashop"
+        "Designed visual assets in Photoshop and conducted product photography",
+        "Integrated designs into a functional Prestashop e-commerce platform"
       ]
     },
     {
       "name": "Reference Hit",
-      "position": "Webdesigner",
+      "position": "Web Designer",
       "startDate": "2012-01-31",
       "endDate": "2013-07-31",
-      "summary": "Startup where flexibility was needed. I was mainly doing the design of the sites, but I often took care of their integration or development with Prestashop.",
+      "summary": "Worked in a startup environment where flexibility was key. Primarily focused on web design, with additional responsibilities in site integration and development using Prestashop.",
       "highlights": [
-        "Webdesign in Adobe Photoshop and Illustrator",
-        "Integration with Prestashop"
+        "Created web designs using Adobe Photoshop and Illustrator",
+        "Integrated and developed websites using Prestashop"
       ]
     },
     {
       "name": "Calais City Hall",
       "position": "Database Assistant",
       "startDate": "2011-05-31",
-      "endDate": "2011-11-31",
-      "summary": "Give assistance in the design of a database listing all addresses in Calais.",
+      "endDate": "2011-11-30",
+      "summary": "Assisted in designing a comprehensive database to catalog all addresses in Calais.",
       "highlights": [
-        "Database design with Merise method",
-        "User interface realized with Access in VBA",
-        "Learning Geographic Information Systems (GIS)"
+        "Designed the database using the Merise method",
+        "Developed user interfaces with Access and VBA",
+        "Gained proficiency in Geographic Information Systems (GIS)"
       ]
     },
     {
       "name": "Naxeo",
-      "position": "Front-end junior developer",
+      "position": "Front-end Junior Developer",
       "startDate": "2008-07-01",
       "endDate": "2010-03-31",
-      "summary": "Work-study contract, then permanent contract. Worked with many different clients (Auchan, Orchestra, Tape à l'oeil, la Redoute, 3 Suisses, Leroux, etc)",
+      "summary": "Completed a work-study program followed by a permanent position, working with a variety of high-profile clients.",
       "highlights": [
-        "Integration of dozens of websites (HTML / CSS / Javascript)",
-        "Flash animation development with Actionscript (AS3)",
-        "jQuery module development"
+        "Integrated numerous websites using HTML, CSS, and JavaScript",
+        "Developed Flash animations with ActionScript (AS3)",
+        "Created interactive modules with jQuery"
       ]
     }
   ],
@@ -116,19 +128,19 @@
     {
       "name": "Frontend",
       "keywords": [
-        "HTML / JSX",
-        "CSS / BEM / Styled Components",
         "Javascript / Typescript",
-        "React",
-        "Redux / Apollo"
+        "React / Next.js",
+        "HTML / JSX",
+        "CSS / Tailwind / CSS Modules / BEM / Styled Components",
+        "Tanstack Query / Redux / Tiptap"
       ]
     },
     {
       "name": "Backend",
       "keywords": ["NodeJS", "PHP", "Python", "Ruby"]
     },
-    { "name": "Design", "keywords": ["Photoshop", "Sketch"] },
-    { "name": "Tools", "keywords": ["VIM", "VSCode", "OSX, Linux, Windows"] },
+    { "name": "Design", "keywords": ["Photoshop", "Sketch", "Figma"] },
+    { "name": "Tools", "keywords": ["Neovim", "VSCode", "OSX, Linux, Windows"] },
     {
       "name": "Devops",
       "keywords": ["Docker", "Kubernetes", "CI/CD"]
@@ -159,7 +171,7 @@
     },
     {
       "name": "Sport",
-      "keywords": ["Workout", "Fitness", "Running", "Swimming", "Biking"]
+      "keywords": ["Workout", "Fitness", "Running", "Swimming" ]
     }
   ]
 }
