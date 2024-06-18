@@ -1,11 +1,16 @@
 {
   "name": "resume",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "https://fabious.github.io/resume/",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build:html": "resume export index.html",
-    "build:pdf": "resume export resume.pdf --theme jsonresume-theme-paper"
+    "build:githubpage": "resumed export en/resume.json -o index.html -t jsonresume-theme-macchiato",
+    "build:en:html": "resumed export en/resume.json -o en/resume.html -t jsonresume-theme-macchiato",
+    "build:fr:html": "resumed export fr/resume.json -o fr/resume.html -t jsonresume-theme-macchiato",
+    "build:pdf": "node index.js",
+    "generate": "npm run build:githubpage && npm run build:en:html && npm run build:fr:html && npm run build:pdf",
+    "validate": "resumed validate"
   },
   "repository": {
     "type": "git",
@@ -14,17 +19,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Fabious/resume/issues"
-  },
   "homepage": "https://github.com/Fabious/resume#readme",
   "dependencies": {
-    "jsonresume-theme-elegant": "^1.16.1",
-    "jsonresume-theme-eloquent": "^4.1.0",
-    "jsonresume-theme-flat": "^0.3.7",
-    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-macchiato": "^1.1.0",
     "jsonresume-theme-short": "^0.1.7",
-    "jsonresume-theme-stackoverflow": "^1.4.0",
-    "resume-cli": "^3.0.5"
+    "jsonresume-theme-stackoverflow": "^2.0.2",
+    "puppeteer": "^22.11.1",
+    "resumed": "^3.0.1"
   }
 }
