@@ -139,7 +139,10 @@
       "keywords": ["NodeJS", "PHP", "Python", "Ruby"]
     },
     { "name": "Design", "keywords": ["Photoshop", "Sketch", "Figma"] },
-    { "name": "Tools", "keywords": ["Neovim", "VSCode", "OSX, Linux, Windows"] },
+    {
+      "name": "Tools",
+      "keywords": ["Neovim", "VSCode", "OSX, Linux, Windows"]
+    },
     {
       "name": "Devops",
       "keywords": ["Docker", "Kubernetes", "CI/CD"]
@@ -170,7 +173,7 @@
     },
     {
       "name": "Sport",
-      "keywords": ["Workout", "Fitness", "Running", "Swimming" ]
+      "keywords": ["Workout", "Fitness", "Running", "Swimming"]
     }
   ]
 }
