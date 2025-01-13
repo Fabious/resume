@@ -1,769 +1,267 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Fabien Kovacic</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <style>/* Utils */
-/*----- Colors -----*/
-/*----- Fonts -----*/
-/*----- Dimensions and sizes -----*/
-/* Base */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-
-html {
-  background: white;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background: white;
-  margin: 50px 0 100px;
-  letter-spacing: .3px;
-  color: #39424B;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: none;
-  margin: 0;
-}
-
-h1 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 1px;
-}
-
-h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: .5px;
-}
-
-h3 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: .4px;
-}
-
-h3.bold {
-  font-weight: 700;
-}
-
-h4 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-h4.bold {
-  font-weight: 700;
-}
-
-h5 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-}
-
-h5.italic {
-  font-style: italic;
-}
-
-h6 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #2895F1;
-}
-
-a .fa-external-link {
-  font-size: 10px;
-  vertical-align: text-top;
-}
-
-p,
-li {
-  font-size: 11px;
-}
-
-blockquote {
-  font-size: 11px;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 10px 25px;
-}
-
-em {
-  color: #999;
-}
-
-ul {
-  margin: 10px 0 0;
-  -webkit-padding-start: 25px;
-}
-
-ul li {
-  padding-left: 10px;
-}
-
-ul.minimal {
-  list-style: none;
-  padding: 0;
-}
-
-ul.minimal li {
-  margin-bottom: 3px;
-  padding-left: 0;
-}
-
-ul.two-column {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 28px;
-  column-count: 2;
-  column-gap: 28px;
-}
-
-ul.two-column li {
-  padding-left: 0;
-}
-
-@page {
-  size: A4;
-}
-
-.container {
-  padding-top: 20px;
-}
-
-.keyline {
-  width: 45px;
-  margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.profile-pic {
-  margin-top: -5px;
-  margin-right: 18px;
-}
-
-.profile-pic img {
-  height: 52px;
-  width: 52px;
-  border-radius: 50%;
-  border: 2px solid #56817A;
-}
-
-.summary {
-  margin: 5px 0 5px;
-}
-
-.sublink {
-  font-size: 70%;
-  font-weight: 200;
-  color: dimgray;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-/* Layouts */
-.page {
-  background: white;
-  width: 612px;
-  min-height: 792px;
-  display: block;
-  margin: 0 auto;
-  border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.left-column {
-  float: left;
-  width: 160px;
-  margin-right: 20px;
-  word-wrap: break-word;
-}
-
-.right-column {
-  width: auto;
-  overflow: hidden;
-}
-
-.item {
-  margin-bottom: 15px;
-}
-
-.item:last-child {
-  margin-bottom: 0;
-}
-
-@media print {
-  body {
-    margin: 0;
-  }
-
-  .page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 36px 0 30px;
-    box-shadow: none;
-  }
-
-  .page .resume-header,
-  .page .resume-content {
-    padding: 0 22px 0 34px;
-  }
-
-  .container {
-    page-break-inside: avoid;
-  }
-
-  .work-container .item {
-    page-break-inside: avoid;
-  }
-
-  .fa-external-link {
-    display: none;
-  }
-}
-
-/* Components */
-.info-tag-container {
-  margin-bottom: 5px;
-}
-
-.info-tag-container .fa {
-  font-size: 14px;
-  width: 12px;
-  margin-right: 5px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.info-tag-container .fa.fa-map-marker {
-  font-size: 16px;
-}
-
-.info-tag-container .fa.fa-mobile {
-  font-size: 18px;
-}
-
-.info-tag-container .fa.fa-envelope-o {
-  font-size: 12px;
-}
-
-.info-tag-container .fa.fa-desktop {
-  font-size: 11px;
-}
-
-.info-tag-container .fa.fa-external-link {
-  width: auto;
-  font-size: inherit;
-  vertical-align: text-top;
-}
-
-.info-tag-container .info-text {
-  font-size: 12px;
-  text-transform: none;
-  display: inline-block;
-  vertical-align: middle;
-  width: 139px;
-}
-
-.references-container .fa {
-  font-size: 14px;
-}
-
-.education-container .location {
-  padding-bottom: 6px;
-  font-weight: 400;
-}
-
-.education-container .specialization {
-  text-transform: none;
-  font-style: italic;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.main-skill {
-  font-size: 80%;
-}
-
-.skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
-}
-</style>
-</head>
-
-<body>
-  <main id="resume" class="page">
-    <header class="resume-header clearfix">
-        <div class="profile-header pull-left">
-            <h1>Fabien Kovacic</h1>
-            <h2>Javascript Developer</h2>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimal-ui"
+    />
+    <title>Fabien Kovacic</title>
+    <style></style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Fabien Kovacic</h1>
+        <h2>Frontend Developer</h2>
+      </header>
+
+      <address>
+        <p>29 rue du duc de guise Calais Pas-de-Calais 62100 FR</p>
+        <p>Fabious[at]free.fr</p>
+        <p>06 78 07 15 84</p>
+      </address>
+
+      <h3>Résumé</h3>
+
+      <p>
+        Lead Développeur Frontend avec plus de 10 ans d’expérience dans la
+        conception et le développement d’applications web performantes. Expert
+        en <b>React</b> et <b>TypeScript</b>, j’ai mené des équipes frontend et
+        fullstack, tout en assurant des rôles de coach et référent technique.
+        Passionné par l’amélioration de la qualité du code et l’optimisation des
+        performances, je combine compétences techniques solides, capacité de
+        leadership et polyvalence acquise dans divers environnements (startups,
+        entreprises, et projets clients).
+      </p>
+
+      <h3>Expériences</h3>
+
+      <section>
+        <h4>Lead Développeur frontend</h4>
+        <h5>
+          <span>07/2018</span>
+          <span>Présent</span>
+        </h5>
+        <p>
+          Chez Les Tilleuls, une entreprise autogérée et égalitaire (Scop), je
+          mène divers projets clients en me spécialisant dans le développement
+          front-end avec JavaScript et TypeScript. Mon rôle inclut la direction
+          et l’accompagnement d’équipes en tant que coach technique et référent.
+        </p>
+        <ul>
+          <li>
+            Expertise avancée en <b>React </b> et <b>TypeScript</b>, avec une
+            maîtrise de la conception et de l’architecture des systèmes.
+          </li>
+          <li>
+            Direction et encadrement d’équipes front-end et fullstack, avec un
+            impact mesurable sur les performances des applications et la qualité
+            du code.
+          </li>
+          <li>
+            Participation active au recrutement : conduite d’entretiens et
+            intégration réussie de développeurs front-end qualifiés.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Développeur Fullstack</h4>
+        <h5>
+          <span>05/2016</span>
+          <span>03/2017</span>
+        </h5>
+        <p>
+          Chargé de l’amélioration de l’intranet pour la sécurité sociale de
+          Calais, avec un focus sur la performance et l’expérience utilisateur.
+        </p>
+
+        <ul>
+          <li>
+            Optimisation de l’interface utilisateur pour une meilleure
+            expérience.
+          </li>
+          <li>
+            Refactorisation et correction des bugs dans une base de code
+            existante en <b>PHP</b>.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Web Designer</h4>
+        <h5>
+          <span>06/2010</span>
+          <span>02/2016</span>
+        </h5>
+        <p>
+          Expérience dans un environnement startup exigeant une grande
+          polyvalence. Principalement axé sur le design web, avec des
+          responsabilités en intégration et développement.
+        </p>
+
+        <ul>
+          <li>
+            Création de designs web professionnels en utilisant
+            <b>Adobe Photoshop</b>
+            et <b>Illustrator</b>.
+          </li>
+          <li>
+            Intégration et développement de sites web, notamment avec
+            <b>Prestashop</b>.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Développeur Front-End Junior</h4>
+        <h5>
+          <span>07/2008</span>
+          <span>03/2010</span>
+        </h5>
+        <p>
+          Alternance suivie d’un contrat permanent, travaillant avec des clients
+          de renom tels que Auchan, La Redoute, Tape à l’œil, et Orchestra.
+        </p>
+        <ul>
+          <li>
+            Intégration de nombreux sites web avec <b>HTML</b>, <b>CSS</b> et
+            <b>JavaScript</b>.
+          </li>
+          <li>
+            Développement d&#x27;animations Flash avec <b>ActionScript (AS3)</b>
+          </li>
+          <li>
+            Création de modules interactifs avec <b>JavaScript</b> et
+            <b>jQuery</b>
+          </li>
+        </ul>
+      </section>
+
+      <h3>Education</h3>
+      <section>
+        <h4>Licence Concepteur Intégrateur Web</h4>
+        <h5>Efficom - Lille</h5>
+        <div>
+          <span>09/2007</span>
+          <span>07/2008</span>
         </div>
-        <div class="profile-pic pull-right">
+      </section>
+
+      <section>
+        <h4>DEUST Bureautique Communication Multimédia</h4>
+        <h5>Université du Littoral Côte d&#x27;Opale</h5>
+        <div>
+          <span>09/2005</span>
+          <span>07/2007</span>
         </div>
-    </header>
-    <div class="resume-content">
-      <aside class="left-column">
-        <div class="container about-container">
-            <div class="title">
-                <h3>About</h3>
-                <div class="keyline"></div>
-            </div>
-                <div class="info-tag-container">
-                    <i class="fa fa-map-marker"></i>
-                
-                        <h6 class="info-text">29 rue du duc de guise Calais Pas-de-Calais 62100 FR</h6>
-                </div>
-        
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-envelope-o"></i>
-                
-                        <h6 class="info-text">
-                            <a href="mailto:Fabious[at]free.fr" target="_blank">
-                                Fabious[at]free.fr
-                            </a>
-                        </h6>
-                </div>
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-mobile"></i>
-                
-                        <h6 class="info-text">06 78 07 15 84</h6>
-                </div>
-        
-        
+      </section>
+
+      <section>
+        <h4>Baccalauréat STT</h4>
+        <h5>Lycée Coubertin - Calais</h5>
+        <div>
+          <span>09/2000</span>
+          <span>07/2004</span>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Compétences</h3>
+
+      <section>
+        <h4>Frontend</h4>
+        <div>
+          <h5>Javascript / Typescript</h5>
+          <h5>React / Next.js</h5>
+          <h5>HTML / JSX</h5>
+          <h5>CSS / Tailwind / CSS Modules / BEM / Styled Components</h5>
+          <h5>Tanstack Query / Redux / Tiptap</h5>
+        </div>
+      </section>
+
+      <section>
+        <h4>Backend</h4>
+        <div>
+          <h5>NodeJS</h5>
+          <h5>PHP</h5>
+          <h5>Python</h5>
+          <h5>Ruby</h5>
+        </div>
+      </section>
+
+      <section>
+        <h4>Design</h4>
+        <div>
+          <h5>Figma</h5>
+          <h5>Zeplin</h5>
+          <h5>Photoshop</h5>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h4>Outils</h4>
+          <div></div>
+        </div>
+        <div>
+          <h5>Neovim</h5>
+          <h5>VSCode</h5>
+          <h5>OSX, Linux, Windows</h5>
+        </div>
+      </section>
+
+      <h3>Languages</h3>
+
+      <ul>
+        <li>
+          <h4>Français <em>langue maternelle</em></h4>
+        </li>
+        <li>
+          <h4>Anglais <em>courant</em></h4>
+        </li>
+      </ul>
+
+      <div>
+        <div>
+          <h3>Centres d'intérêt</h3>
+          <div></div>
+        </div>
+        <section>
+          <h4>Musique</h4>
+          <ul>
+            <li>Guitare 🎸</li>
+            <li>Metal 🤘</li>
+          </ul>
         </section>
-            <div class="skills-container">
-                    <section class="container">
-                            <div class="title">
-                                <h3>Frontend</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Javascript / Typescript</h6>
-                                    <h6 class="main-skill skill">React / Next.js</h6>
-                                    <h6 class="main-skill skill">HTML / JSX</h6>
-                                    <h6 class="main-skill skill">CSS / Tailwind / CSS Modules / BEM / Styled Components</h6>
-                                    <h6 class="main-skill skill">Tanstack Query / Redux / Tiptap</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Backend</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">NodeJS</h6>
-                                    <h6 class="main-skill skill">PHP</h6>
-                                    <h6 class="main-skill skill">Python</h6>
-                                    <h6 class="main-skill skill">Ruby</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Design</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Photoshop</h6>
-                                    <h6 class="main-skill skill">Sketch</h6>
-                                    <h6 class="main-skill skill">Figma</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Tools</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Neovim</h6>
-                                    <h6 class="main-skill skill">VSCode</h6>
-                                    <h6 class="main-skill skill">OSX, Linux, Windows</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Devops</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Docker</h6>
-                                    <h6 class="main-skill skill">Kubernetes</h6>
-                                    <h6 class="main-skill skill">CI/CD</h6>
-                            </div>
-                    </section>
-            </div>
-            <div class="container languages-container">
-                <div class="title">
-                    <h3>Languages</h3>
-                    <div class="keyline"></div>
-                </div>
-                <ul class="minimal">
-                        <li>
-                            <h6>French <em>(Mother tongue)</em></h6>
-                        </li>
-                        <li>
-                            <h6>English <em>(Fluent)</em></h6>
-                        </li>
-                </ul>
-            </div>
-            <div class="container interests-container">
-                <div class="title">
-                    <h3>Interests</h3>
-                    <div class="keyline"></div>
-                </div>
-                    <section class="item">
-                            <h4 class="bold">Musique</h4>
-                            <ul class="minimal">
-                                    <li>Guitar</li>
-                                    <li>Piano</li>
-                                    <li>Metal</li>
-                            </ul>
-                    </section>
-                    <section class="item">
-                            <h4 class="bold">Nature</h4>
-                            <ul class="minimal">
-                                    <li>Animals</li>
-                                    <li>Hiking</li>
-                            </ul>
-                    </section>
-                    <section class="item">
-                            <h4 class="bold">Informatique</h4>
-                            <ul class="minimal">
-                                    <li>Open Source</li>
-                                    <li>Hardware</li>
-                                    <li>Esport</li>
-                            </ul>
-                    </section>
-                    <section class="item">
-                            <h4 class="bold">Sport</h4>
-                            <ul class="minimal">
-                                    <li>Workout</li>
-                                    <li>Fitness</li>
-                                    <li>Running</li>
-                                    <li>Swimming</li>
-                            </ul>
-                    </section>
-            </div>
-      </aside>
-      <div class="right-column">
-                <div class="container summary-container">
-                    <div class="title">
-                        <h3>Summary</h3>
-                        <div class="keyline"></div>
-                    </div>            <p class="summary">
-                        With a deep-rooted passion for computers, I embarked on my career as a Front-end Developer, working with HTML, CSS, JavaScript, and ActionScript 3. I later honed my design skills using the Adobe Suite. In recent years, I have dedicated myself exclusively to coding, acquiring substantial experience in both front-end and back-end technologies. I am particularly enthusiastic about the JavaScript ecosystem, focusing on TypeScript, React, and Node.js, which allows me to create seamless and efficient web applications.
-                    </p>
-                </div>
-        <div class="container work-container">
-            <div class="title">
-                <h3>Experience</h3>
-                <div class="keyline"></div>
-            </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">09/2022</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Lead Front-end Developer</h4>
-        
-        
-                    <p class="summary">Joined France Télévisions to provide strong front-end expertise, manage the front-end team, and drive the adoption of best practices. The technology stack includes React, TypeScript, and Next.js. My leadership has been well-received, and I have played a key role in recruiting and training new front-end developers.</p>
-        
-                    <ul>
-                        <li>Led and mentored a front-end team, enhancing performance and code quality</li>
-                        <li>Expertly utilized React, TypeScript, and Next.js to build scalable applications</li>
-                        <li>Conducted interviews and successfully recruited skilled front-end developers</li>
-                        <li>Developed a sophisticated rich text editor using Tiptap</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">07/2018</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Front-end Developer</h4>
-        
-        
-                    <p class="summary">At Les Tilleuls, a self-managed and egalitarian company (Scop), I undertake diverse client projects, primarily focusing on front-end development with JavaScript. I also handle back-end tasks using NodeJS. My role includes leading small teams as a coach and technical advisor.</p>
-        
-                    <ul>
-                        <li>Expertise in React and TypeScript, system design and architecture</li>
-                        <li>Implementation of GraphQL (Apollo) and Express (NodeJS) solutions</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2016</span>
-                                <span class="endDate"> - 03/2017</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Fullstack Developer</h4>
-        
-        
-                    <p class="summary">Led efforts to enhance the intranet for the Calais social security office, focusing on performance and user experience.</p>
-        
-                    <ul>
-                        <li>Refactored and fixed bugs in the existing PHP codebase</li>
-                        <li>Optimized server performance, resulting in faster load times</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">11/2013</span>
-                                <span class="endDate"> - 02/2014</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Prestashop Developer</h4>
-        
-        
-                    <p class="summary">Executed a short-term project to establish the company&#x27;s online store, from design to integration.</p>
-        
-                    <ul>
-                        <li>Designed visual assets in Photoshop and conducted product photography</li>
-                        <li>Integrated designs into a functional Prestashop e-commerce platform</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">01/2012</span>
-                                <span class="endDate"> - 07/2013</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Web Designer</h4>
-        
-        
-                    <p class="summary">Worked in a startup environment where flexibility was key. Primarily focused on web design, with additional responsibilities in site integration and development using Prestashop.</p>
-        
-                    <ul>
-                        <li>Created web designs using Adobe Photoshop and Illustrator</li>
-                        <li>Integrated and developed websites using Prestashop</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">05/2011</span>
-                                <span class="endDate"> - 11/2011</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Database Assistant</h4>
-        
-        
-                    <p class="summary">Assisted in designing a comprehensive database to catalog all addresses in Calais.</p>
-        
-                    <ul>
-                        <li>Designed the database using the Merise method</li>
-                        <li>Developed user interfaces with Access and VBA</li>
-                        <li>Gained proficiency in Geographic Information Systems (GIS)</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">07/2008</span>
-                                <span class="endDate"> - 03/2010</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Front-end Junior Developer</h4>
-        
-        
-                    <p class="summary">Completed a work-study program followed by a permanent position, working with a variety of high-profile clients.</p>
-        
-                    <ul>
-                        <li>Integrated numerous websites using HTML, CSS, and JavaScript</li>
-                        <li>Developed Flash animations with ActionScript (AS3)</li>
-                        <li>Created interactive modules with jQuery</li>
-                    </ul>
-                </section>
-        </div>
-        <div class="container education-container">
-            <div class="title">
-            <h3>Education</h3>
-            <div class="keyline"></div>
-        </div> 
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    Efficom - Lille
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">09/2007</span>
-                    <span class="endDate"> - 07/2008</span>
-            </h5>
-        </div>
-         
-                <h4>Licence Concepteur Intégrateur Web </h4>
-        
-              </section>
-        
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    Université du Littoral Côte d&#x27;Opale
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">09/2005</span>
-                    <span class="endDate"> - 07/2007</span>
-            </h5>
-        </div>
-         
-                <h4>DEUST Bureautique Communication Multimédia </h4>
-        
-              </section>
-        
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    Université de Boulogne-sur-Mer
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">09/2004</span>
-                    <span class="endDate"> - 07/2005</span>
-            </h5>
-        </div>
-         
-                <h4>1ère année Licence Anglais </h4>
-        
-              </section>
-        
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    Lycée Coubertin - Calais
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">09/2000</span>
-                    <span class="endDate"> - 07/2004</span>
-            </h5>
-        </div>
-         
-                <h4>Baccalauréat STT </h4>
-        
-              </section>
-        </div>
+        <section>
+          <h4>Nature</h4>
+          <ul>
+            <li>Animaux 🐅</li>
+            <li>Randonnée 🥾</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Culture</h4>
+          <ul>
+            <li>Séries 📺</li>
+            <li>Cinéma 🎬</li>
+            <li>Mangas 🌸</li>
+            <li>Musée 🏛️</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Sport</h4>
+          <ul>
+            <li>Yoga 🧘</li>
+            <li>Musculation 🏋️</li>
+            <li>Natation 🏊</li>
+          </ul>
+        </section>
       </div>
-    </div>
-  </main>
-</body>
-
+    </aside>
+  </body>
 </html>
