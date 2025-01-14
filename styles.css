@@ -1,0 +1,129 @@
+* {
+  font-family:
+    Nunito Sans,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family:
+    Montserrat,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+html {
+  line-height: 1.4;
+  background: #fff;
+  color: #020617;
+}
+
+body {
+  display: flex;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background: #fffcf1 url("./background.png") 0 -10px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+p,
+li {
+  font-size: 0.8em;
+}
+
+h3 {
+  color: #1f2937;
+}
+h4 {
+  color: #475569;
+}
+h5,
+h6 {
+  color: #64748b;
+}
+
+main,
+aside {
+  padding: 0 20px;
+}
+
+/* right side  */
+main {
+  margin: 70px 20px 0 0;
+  order: 2;
+}
+
+main header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main li {
+  display: none;
+}
+
+main .place-and-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* left side  */
+aside {
+  margin: 40px 0 0 20px;
+  order: 1;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+aside address li {
+  list-style: none;
+  text-align: center;
+  font-style: normal;
+}
+
+aside ul {
+  padding-left: 16px;
+}
+
+@media print {
+  html {
+    background-color: #fff;
+  }
+
+  body {
+    padding: 0;
+    box-shadow: none;
+  }
+}

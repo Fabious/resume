@@ -1,115 +1,22 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <title>Fabien Kovacic</title>
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, minimal-ui"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
     />
-    <title>Fabien Kovacic</title>
-    <style>
-      /* Global Styles */
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        background-color: #f9f9f9;
-      }
-
-      main {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-
-      header {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      h1 {
-        font-size: 2em;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 1.2em;
-        margin: 0;
-        color: #666;
-      }
-
-      address,
-      p {
-        font-size: 0.9em;
-        margin: 10px 0;
-        color: #555;
-      }
-
-      h3 {
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-      }
-
-      section {
-        margin-bottom: 20px;
-      }
-
-      h4 {
-        font-size: 1.1em;
-        color: #007bff;
-        margin: 10px 0;
-      }
-
-      h5 {
-        font-size: 0.9em;
-        color: #666;
-        margin: 5px 0;
-      }
-
-      ul {
-        padding-left: 20px;
-        margin: 10px 0;
-      }
-
-      ul li {
-        margin: 5px 0;
-      }
-
-      aside {
-        margin-top: 30px;
-      }
-
-      aside h3 {
-        margin-top: 0;
-      }
-
-      /* Print Styles */
-      @media print {
-        body {
-          background-color: #fff;
-        }
-
-        main {
-          box-shadow: none;
-          padding: 0;
-        }
-
-        h1,
-        h2 {
-          text-align: left;
-        }
-
-        h3 {
-          border-bottom: 1px solid #333;
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -119,28 +26,15 @@
         <h2>Lead Développeur Frontend</h2>
       </header>
 
-      <section aria-labelledby="contact-info">
-        <h3 id="contact-info">Contact</h3>
-        <address>
-          <ul>
-            <li>Calais, Pas-de-Calais, 62100 France</li>
-            <li>Fabious[at]free.fr</li>
-            <li>zéro six 78 07 15 84</li>
-          </ul>
-        </address>
-      </section>
-
       <section aria-labelledby="summary">
         <h3 id="summary">Résumé</h3>
         <p>
           Lead Développeur Frontend avec plus de 10 ans d’expérience dans la
           conception et le développement d’applications web performantes. Expert
-          en <b>React</b> et <b>TypeScript</b>, j’ai mené des équipes frontend
-          et fullstack, tout en assurant des rôles de coach et référent
-          technique. Passionné par l’amélioration de la qualité du code et
-          l’optimisation des performances, je combine compétences techniques
-          solides, capacité de leadership et polyvalence acquise dans divers
-          environnements (startups, entreprises, et projets clients).
+          en <b>React</b> et <b>TypeScript</b>, j’ai endradré des équipes
+          frontend et fullstack, tout en assurant des rôles de coach et référent
+          technique. Je combine compétences techniques solides et capacité de
+          leadership.
         </p>
       </section>
 
@@ -148,11 +42,11 @@
         <h3 id="experience">Expériences</h3>
 
         <section>
-          <h4>Lead Développeur frontend</h4>
-          <h5>
-            <span>07/2018</span>
-            <span>Présent</span>
-          </h5>
+          <h4>Lead Développeur Frontend</h4>
+          <div class="place-and-date">
+            <h5>Les-Tilleuls.coop</h5>
+            <h6>2018 – Présent</h6>
+          </div>
           <p>
             Chez Les Tilleuls, une entreprise autogérée et égalitaire (Scop), je
             mène divers projets clients en me spécialisant dans le développement
@@ -179,10 +73,10 @@
 
         <section>
           <h4>Développeur Fullstack</h4>
-          <h5>
-            <span>05/2016</span>
-            <span>03/2017</span>
-          </h5>
+          <div class="place-and-date">
+            <h5>CPAM</h5>
+            <h6>2016 – 2017</h6>
+          </div>
           <p>
             Chargé de l’amélioration de l’intranet pour la sécurité sociale de
             Calais, avec un focus sur la performance et l’expérience
@@ -203,10 +97,10 @@
 
         <section>
           <h4>Web Designer</h4>
-          <h5>
-            <span>06/2010</span>
-            <span>02/2016</span>
-          </h5>
+          <div class="place-and-date">
+            <h5>Reference Hit</h5>
+            <h6>2011 – 2016</h6>
+          </div>
           <p>
             Expérience dans un environnement startup exigeant une grande
             polyvalence. Principalement axé sur le design web, avec des
@@ -227,11 +121,11 @@
         </section>
 
         <section>
-          <h4>Développeur FrontEnd Junior</h4>
-          <h5>
-            <span>07/2008</span>
-            <span>03/2010</span>
-          </h5>
+          <h4>Développeur Frontend Junior</h4>
+          <div class="place-and-date">
+            <h5>Naxeo</h5>
+            <h6>2008 – 2011</h6>
+          </div>
           <p>
             Alternance suivie d’un contrat permanent, travaillant avec des
             clients de renom tels que Auchan, La Redoute, Tape à l’œil, et
@@ -255,33 +149,47 @@
       </section>
 
       <section aria-labelledby="experience">
-        <h3>Education</h3>
+        <h3 id="experience">Education</h3>
         <section>
           <h4>Licence Concepteur Intégrateur Web</h4>
-          <h5>Efficom - Lille</h5>
-          <div>
-            <span>09/2007</span>
-            <span>07/2008</span>
+          <div class="place-and-date">
+            <h5>Efficom - Lille</h5>
+            <h6>2007 – 2008</h6>
           </div>
         </section>
 
         <section>
           <h4>DEUST Bureautique Communication Multimédia</h4>
-          <h5>Université du Littoral Côte d&#x27;Opale</h5>
-          <div>
-            <span>09/2005</span>
-            <span>07/2007</span>
+          <div class="place-and-date">
+            <h5>Université du Littoral Côte d&#x27;Opale</h5>
+            <h6>2005 – 2007</h6>
           </div>
         </section>
 
         <section>
           <h4>Baccalauréat STT</h4>
-          <h5>Lycée Coubertin - Calais</h5>
-          <div>
-            <span>09/2000</span>
-            <span>07/2004</span>
+          <div class="place-and-date">
+            <h5>Lycée Coubertin - Calais</h5>
+            <h6>2000 – 2004</h6>
           </div>
         </section>
+      </section>
+    </main>
+
+    <aside>
+      <img width="240" height="240" src="./me.jpg" alt="Moi" />
+
+      <section>
+        <address>
+          <ul>
+            <li>Calais, Pas-de-Calais, 62100 France</li>
+            <li>
+              <a href="mailto:fabien@les-tilleuls.coop"
+                >fabien@les-tilleuls.coop</a
+              >
+            </li>
+          </ul>
+        </address>
       </section>
 
       <section aria-labelledby="skills">
@@ -331,6 +239,6 @@
           <li>Sport</li>
         </ul>
       </section>
-    </main>
+    </aside>
   </body>
 </html>
