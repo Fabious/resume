@@ -48,7 +48,7 @@ body {
   display: flex;
   max-width: 960px;
   margin: 20px auto;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   background: #fffcf1 url("./background.png") 0 -10px no-repeat;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -63,16 +63,25 @@ li {
   font-size: 0.8em;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 1.8em;
+}
 h3 {
+  font-size: 1.4em;
   color: #1f2937;
   margin: 8px 0;
 }
 h4 {
+  font-size: 1.2em;
   color: #475569;
   margin: 4px 0;
 }
 h5,
 h6 {
+  font-size: 0.8em;
   color: #64748b;
 }
 
@@ -81,6 +90,18 @@ li {
 }
 li::marker {
   color: #f7b95f;
+  font-size: 1.2em;
+  line-height: 0.8em;
+}
+
+h6 {
+  display: list-item;
+  list-style: disc;
+}
+h6::marker {
+  color: #f7b95f;
+  font-size: 1.2em;
+  line-height: 0.8em;
 }
 
 /* right side  */
