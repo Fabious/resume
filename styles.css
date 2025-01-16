@@ -34,18 +34,22 @@ h6 {
     Segoe UI Symbol;
 }
 
-html {
+a {
+  color: inherit;
+}
+
+body {
   line-height: 1.4;
   background: #fff;
   color: #020617;
 }
 
-body {
+.container {
   display: flex;
   max-width: 960px;
   margin: 20px auto;
   padding: 20px 0;
-  background: #fffcf1 url("./background.png") 0 -10px;
+  background: #fffcf1 url("./background.png") 0 -10px no-repeat;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075),
@@ -61,23 +65,28 @@ li {
 
 h3 {
   color: #1f2937;
+  margin: 8px 0;
 }
 h4 {
   color: #475569;
+  margin: 4px 0;
 }
 h5,
 h6 {
   color: #64748b;
 }
 
-main,
-aside {
-  padding: 0 20px;
+li {
+  list-style: disc;
+}
+li::marker {
+  color: #f7b95f;
 }
 
 /* right side  */
 main {
   margin: 70px 20px 0 0;
+  padding: 0 60px;
   order: 2;
 }
 
@@ -86,8 +95,12 @@ main header {
   text-align: center;
 }
 
-main li {
-  display: none;
+main #summary {
+  text-align: justify;
+}
+
+main ul {
+  padding-left: 20px;
 }
 
 main .place-and-date {
@@ -98,6 +111,7 @@ main .place-and-date {
 /* left side  */
 aside {
   margin: 40px 0 0 20px;
+  padding: 0 20px;
   order: 1;
 }
 
@@ -125,5 +139,10 @@ aside ul {
   body {
     padding: 0;
     box-shadow: none;
+  }
+
+  /* hides all bullet points to gain height space */
+  main li {
+    display: none;
   }
 }
