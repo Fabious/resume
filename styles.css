@@ -121,6 +121,9 @@ aside img {
   border-radius: 50%;
 }
 
+aside address {
+  margin: 40px 0 24px;
+}
 aside address li {
   list-style: none;
   text-align: center;
@@ -129,6 +132,9 @@ aside address li {
 
 aside ul {
   padding-left: 16px;
+}
+aside li {
+  margin: 4px 0;
 }
 
 @media print {
